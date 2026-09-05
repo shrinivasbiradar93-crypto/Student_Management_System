@@ -1,0 +1,89 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color:black;
+    padding: 20px;
+    background-color:orange;
+}
+
+
+.student-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.student-header h2 {
+    margin: 0;
+}
+
+
+.table {
+    width: 100%;
+    
+}
+
+.table th,
+.table td {
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+
+
+.table td:last-child {
+    min-width: 150px;
+}
+
+.table td .btn {
+    margin-right: 5px;
+}
+
+.custom-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-modal-dialog {
+    width: 500px;
+    max-width: 90%;
+}
+
+/* 
+
+@media (max-width: 767px) {
+
+    .student-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 15px;
+    }
+
+    .student-header h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .student-header button {
+        width: 100%;
+    }
+
+    .table {
+        min-width: 800px;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+} */
