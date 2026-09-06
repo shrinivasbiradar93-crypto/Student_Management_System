@@ -32,14 +32,10 @@ body {
 }
 
 
-
 .table td:last-child {
     min-width: 150px;
 }
 
-.table td .btn {
-    margin-right: 5px;
-}
 
 .custom-modal {
     position: fixed;
@@ -54,36 +50,12 @@ body {
     align-items: center;
 }
 
+
+
 .custom-modal-dialog {
     width: 500px;
     max-width: 90%;
 }
 
-/* 
 
-@media (max-width: 767px) {
 
-    .student-header {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 15px;
-    }
-
-    .student-header h2 {
-        font-size: 25px;
-        text-align: center;
-    }
-
-    .student-header button {
-        width: 100%;
-    }
-
-    .table {
-        min-width: 800px;
-    }
-
-    .table-responsive {
-        overflow-x: auto;
-    }
-
-} */

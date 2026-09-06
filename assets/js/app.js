@@ -64,24 +64,30 @@ let studentArr = [
     }
 ];
 
-function onAddStudent() {
-    addBtn.classList.remove("d-none");
-    updateBtn.classList.add("d-none");
-    studentForm.reset();
-    studentModal.classList.remove("d-none");
+// function onAddStudent() {
+//     addBtn.classList.remove("d-none");
+//     updateBtn.classList.add("d-none");
+//     studentForm.reset();
+//     studentModal.classList.remove("d-none");
+// }
+
+// function onCloseModal() {
+//     studentModal.classList.add("d-none");
+//     addBtn.classList.remove("d-none");
+//     updateBtn.classList.add("d-none");
+// }
+
+// function onCancel() {
+//     studentModal.classList.add("d-none");
+//     addBtn.classList.remove("d-none");
+//     updateBtn.classList.add("d-none");
+// }
+
+function onToggle(){
+    studentModal.classList.toggle('d-none')
 }
 
-function onCloseModal() {
-    studentModal.classList.add("d-none");
-    addBtn.classList.remove("d-none");
-    updateBtn.classList.add("d-none");
-}
 
-function onCancel() {
-    studentModal.classList.add("d-none");
-    addBtn.classList.remove("d-none");
-    updateBtn.classList.add("d-none");
-}
 
 function onStudentAdd(eve) {
     eve.preventDefault();
@@ -234,11 +240,17 @@ function onSearchStudent(eve) {
     });
 }
 
-addStudentBtn.addEventListener("click", onAddStudent);
-closeModalBtn.addEventListener("click", onCloseModal);
-cancelBtn.addEventListener("click", onCancel);
+// addStudentBtn.addEventListener("click", onAddStudent);
+// closeModalBtn.addEventListener("click", onCloseModal);
+// cancelBtn.addEventListener("click", onCancel);
+
 studentForm.addEventListener("submit", onStudentAdd);
 updateBtn.addEventListener("click", onUpdate);
 searchStudent.addEventListener("input", onSearchStudent);
+
+addStudentBtn.addEventListener("click", onToggle);
+closeModalBtn.addEventListener("click", onToggle);
+cancelBtn.addEventListener("click", onToggle);
+
 
 showStudents();
